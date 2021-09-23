@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <script src="home.js"></script>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<div class="container">
+    <div id="errors"></div>
+    <form id="createDVDBox">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Title</label>
+          <input class="form-control" id="a" aria-describedby="emailHelp" placeholder="Title">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Release Date</label>
+          <input class="form-control" id="b" placeholder="Release Date">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Director</label>
+            <input class="form-control" id="c" placeholder="Director">
+
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Rating</label>
+            <input  class="form-control" id="d" placeholder="Rating" value="G">
+          </div>
+          <textarea class="form-control" id="e" rows="3"></textarea>
+
+        <button id="submitDVDNew" class="btn btn-primary">Submit</button>
+      </form>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Navbar content -->
+        <a class="navbar-brand" id="createDVD">Create DVD</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Search Category</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchButton">Search</button>
+          </form>
+        </div>
+      </nav>
+<div class="row">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Title</th>
+            <th scope="col">Release Date</th>
+            <th scope="col">Director</th>
+            <th scope="col">Rating</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody id="tableRows">
+        </tbody>
+      </table>
+    </div>
+</div>
+</body>
+</html>
